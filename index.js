@@ -29,32 +29,15 @@ client.on("ready", () => {
 const questions_for_$ex = ["What", "what","WHAT", 
     "Whut", "whut", "wt", "Wt", "where", "Where", "Why", "why"]
 
+const hi_messages = ["hi", "Hi", "HI", "hI", "hlo", "Hlo", "HLO"]
+
 client.on("messageCreate", (message) => {
 
     if (message.author.bot) return
 
-    if (message.content == "hi"){
-        message.reply("Hello There!!")
-    }
-    else if (message.content == "Hi"){
-        message.reply("Hello There!!")
-    }
-    else if (message.content == "HI"){
-        message.reply("Hello There!!")
-    }
-    else if (message.content == "hI"){
-        message.reply("Hello There!!")
-    }
-    else if (message.content == "hlo"){
-        message.reply("Hello There!!")
-    }
-    else if (message.content == "Hlo"){
-        message.reply("Hello There!!")
-    }
-    else if (message.content == "HLO"){
-        message.reply("Hello There!!")
-    }
-    else if (message.content == "rick"){
+
+    
+    if (message.content == "rick"){
         message.reply("roll")
     }
     else if (message.content == "Rick"){
@@ -71,6 +54,9 @@ client.on("messageCreate", (message) => {
     }
     else if (message.content == "sad"){
         message.reply("ikr lol")
+    }
+    if (hi_messages.some(word => message.content.includes(word))) {
+        message.reply("Hello There!!")
     }
 
     if (questions_for_$ex.some(word => message.content.includes(word))) {
