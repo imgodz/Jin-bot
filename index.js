@@ -29,7 +29,7 @@ client.on("ready", () => {
 const questions_for_$ex = ["What", "what","WHAT", 
     "Whut", "whut", "wt", "Wt", "where", "Where", "Why", "why"]
 
-const hi_messages = ["hi", "Hi", "HI", "hI", "hlo", "Hlo", "HLO"]
+const hi_messages = ["hi", "Hi", "HI", "hI", "hlo", "Hlo", "HLO","Hello", "hello", "HELLO"]
 
 client.on("messageCreate", (message) => {
 
