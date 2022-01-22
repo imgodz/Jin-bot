@@ -154,8 +154,10 @@ function gotMessage(message){
 
     if (message.content === "/jrnum"){
         sauce = (Math.floor(100000 + Math.random() * 900000))
-        message.channel.send("Here's a Random Sauce for master\n\
-https://nhentai.to/g/" + sauce)
+        message.channel.send("Here's a Random Sauce for master")
+        message.channel.send("Code: ")
+        message.channel.send(sauce.toString())
+        message.channel.send("Link: https://nhentai.to/g/" + sauce)
     }
 
     /*async function getgif() {
