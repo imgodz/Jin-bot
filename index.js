@@ -14,6 +14,8 @@ function getQuote() {
   }
 
 
+
+
 const client = new Discord.Client({
     intents: [
         "GUILDS",
@@ -26,8 +28,8 @@ client.on("ready", () => {
     console.log(`Logged in as ${client.user.tag}`)
 })
 
-client.on("messageCreate", (message) => {
-
+client.on("messageCreate", gotMessage)
+function gotMessage(message){
     if (message.author.bot) return
 
     //Chats
@@ -89,6 +91,10 @@ client.on("messageCreate", (message) => {
         message.reply("Hello There!!")
     }
 
+    if (message.content == "gg"){
+        message.reply("GG")
+    }
+
     if (message.content.includes("what")){
         message.reply("Sex")
     }
@@ -134,6 +140,46 @@ client.on("messageCreate", (message) => {
         getQuote().then(quote => message.channel.send(quote))
     }
 
+
+    if (message.content.includes === "/jms"){
+        const args = message.content.split(/ +/);
+        if (args[0] == "/jms"){
+            let keywords = 'https://www.youtube.com/playlist?list=PLjnsp86EUQgpV6rjy4sMlIPo-7LIbjZyX'
+            if (args.length > 1) {
+                keywords = args.slice(1, args.length).join(" ")
+            }
+            message.channel.send("#play " + keywords)
+        }
+    }
+
+    if (message.content === "/jrnum"){
+        sauce = (Math.floor(100000 + Math.random() * 900000))
+        message.channel.send("Here's a Random Sauce for master\n\
+https://nhentai.to/g/" + sauce)
+    }
+
+    /*async function getgif() {
+        let tokens = message.cleanContent.split(" ")
+        if (tokens[0] == "/jgif") {
+            let keywords = "zhongli";
+            if (tokens.length > 1) {
+              keywords = tokens.slice(1, tokens.length).join(" ");
+            }
+            let url = `https://api.tenor.com/v1/search?q=${keywords}&key=${process.env.TENORKEY}&contentfilter=off`;
+            let response = await fetch(url);
+            let json = await response.json();
+            const index = Math.floor(Math.random() * json.results.length);
+            message.channel.send(json.results[index].url);
+            message.channel.send("GIF from Tenor: " + keywords);
+          }
+      }*/
+
+    if (message.content.includes("/jgif")){
+    getgif()
+    }
+
+
+
     if (message.content === "/jmviol"){
         message.reply('https://www.youtube.com/watch?v=s7gY2ewmPHo')
     }
@@ -160,7 +206,23 @@ Bye Bye ヾ(＾ ∇ ＾)'
         )
     }
 
-})
+}
+
+/*client.on("messageCreate", (message) => {
+    if (message.content == "/jgif"){
+
+
+        let url = `https://g.tenor.com/v1/search?q=zhongli&key=${process.env.TENORKEY}&limit=8`
+        let response = await fetch(url)
+        let json = await response.json()
+        console.log(json)
+
+        message.channel.send("gif")
+        message.channel.send(json.results[0].url)
+    }
+    
+})*/
+
 
 
 client.login(process.env.TOKEN)
