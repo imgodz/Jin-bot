@@ -141,15 +141,8 @@ function gotMessage(message){
     }
 
 
-    if (message.content.includes === "/jms"){
-        const args = message.content.split(/ +/);
-        if (args[0] == "/jms"){
-            let keywords = 'https://www.youtube.com/playlist?list=PLjnsp86EUQgpV6rjy4sMlIPo-7LIbjZyX'
-            if (args.length > 1) {
-                keywords = args.slice(1, args.length).join(" ")
-            }
-            message.channel.send("#play " + keywords)
-        }
+    if (message.content === "/jmsp"){
+        message.reply("https://www.youtube.com/playlist?list=PLjnsp86EUQgpV6rjy4sMlIPo-7LIbjZyX")
     }
 
     if (message.content === "/jrnum"){
@@ -157,7 +150,7 @@ function gotMessage(message){
         message.channel.send("Here's a Random Sauce for master")
         message.channel.send("Code: ")
         message.channel.send(sauce.toString())
-        message.channel.send("Link: https://nhentai.to/g/" + sauce)
+        message.channel.send("Link: https://nhentai.net/g/" + sauce)
     }
 
     /*async function getgif() {
@@ -176,9 +169,9 @@ function gotMessage(message){
           }
       }*/
 
-    if (message.content.includes("/jgif")){
+    /*if (message.content.includes("/jgif")){
     getgif()
-    }
+    }*/
 
 
 
