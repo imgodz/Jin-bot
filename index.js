@@ -194,7 +194,7 @@ Real shit starts here\nAddition of m means meme\n\
    -Addition of quote will return a quote, the character who said it and anime it is from\
    - Addition of emodmg will return emotional damage meme\n\n\n\
 Coming to text replies\n whenever the user says \nHi i shall reply with Hello There!!\n\
-What,Whut,Where,Why ishall reply with sex\n\n\n\
+What,Whut,Where,Why i shall reply with sex\n\n\n\
 My master has only given me the power and authority fullfill the above requirements and commands\n\
 I was promised by my master that i shall be upgraded whenever he deems it\n\n\nWell then i shall take my leave\n\
 Bye Bye ヾ(＾ ∇ ＾)'
