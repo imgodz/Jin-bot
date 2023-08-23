@@ -33,51 +33,128 @@ function gotMessage(message){
     if (message.author.bot) return
 
     //Chats
-    if (message.content == "rick" || "Rick" || "RICK"){
+    if (message.content == "rick"){
         message.reply("roll")
     }
-
-    else if (message.content == "nice" || "NICE" || "Nice") {
+    else if (message.content == "Rick"){
+        message.reply("Roll")
+    }
+    else if (message.content == "nice"){
         message.reply("Ye")
     }
-        
-    else if (message.content == "Sad" || "SAD" || "sad"){
+    else if (message.content == "Nice"){
+        message.reply("Ye")
+    }
+    else if (message.content == "Sad"){
         message.reply("ikr lol")
     }
-
-    if (message.content == "hi" || "HI" || "Hi" || "hI"){
+    else if (message.content == "sad"){
+        message.reply("ikr lol")
+    }
+    if (message.content == "hi"){
+        message.reply("Hello There!!")
+    }
+    if (message.content == "HI"){
+        message.reply("Hello There!!")
+    }
+    if (message.content == "HI"){
+        message.reply("Hello There!!")
+    }
+    if (message.content == "hI"){
+        message.reply("Hello There!!")
+    }
+    if (message.content == "hlo"){
+        message.reply("Hello There!!")
+    }
+    if (message.content == "Hlo"){
+        message.reply("Hello There!!")
+    }
+    if (message.content == "HLO"){
+        message.reply("Hello There!!")
+    }
+    if (message.content == "Hello"){
+        message.reply("Hello There!!")
+    }
+    if (message.content == "hello"){
+        message.reply("Hello There!!")
+    }
+    if (message.content == "HELLO"){
+        message.reply("Hello There!!")
+    }
+    if (message.content == "Hey"){
+        message.reply("Hello There!!")
+    }
+    if (message.content == "hey"){
+        message.reply("Hello There!!")
+    }
+    if (message.content == "HEY"){
         message.reply("Hello There!!")
     }
 
-    if (message.content == "hlo" || "Hlo" || "HLO"){
-        message.reply("Hello There!!")
-    }
-
-    if (message.content == "Hello" || "HELLO" || "hello"){
-        message.reply("Hello There!!")
-    }
-    
-    if (message.content == "Hey" || "hey" || "HEY"){
-        message.reply("Hello There!!")
-    }
-
-    if (message.content == "gg" || "GG"){
+    if (message.content == "gg"){
         message.reply("GG")
     }
 
-    if (message.content.includes("what" || "What" || "WHAT" || "Where" || "where" || "WHERE" || "Why" || "why" || "WHY" || "Whut" || "WHUT" || "whut" || "Wt" || "WT" ||  "wt")){
+    if (message.content.includes("what")){
         message.reply("Sex")
+    }
+    if (message.content.includes("What")){
+        message.reply("Sex")
+    }
+    if (message.content.includes("WHAT")){
+        message.reply("Sex")
+    }
+    if (message.content.includes("Where")){
+        message.reply("Sex")
+    }
+    if (message.content.includes("where")){
+        message.reply("Sex")
+    }
+    if (message.content.includes("WHERE")){
+        message.reply("Sex")
+    }
+    if (message.content.includes("Why")){
+        message.reply("Sex")
+    }
+    if (message.content.includes("why")){
+        message.reply("Sex")
+    }
+    if (message.content.includes("WHY")){
+        message.reply("Sex")
+    }
+    if (message.content.includes("Whut")){
+        message.reply("Sex")
+    }
+    if (message.content.includes("wt")){
+        message.reply("Sex")
+    }
+    if (message.content.includes("Whut")){
+        message.reply("Sex")
+    }
+    if (message.content.includes("Wt")){
+        message.reply("Sex")
+    }
+    if (message.content == "Who was in Paris") {
+        message.reply("HI-")
+        message.channel.send("Hello This is the Discord Team ヾ(＾ ∇ ＾) \nWe found something funny so we removed it.")
+    }
+    if (message.content == "Who was in paris") {
+        message.reply("HI-")
+        message.channel.send("Hello This is the Discord Team ヾ(＾ ∇ ＾) \nWe found something funny so we removed it.")
+    }
+    if (message.content == "who was in paris") {
+        message.reply("HI-")
+        message.channel.send("Hello This is the Discord Team ヾ(＾ ∇ ＾) \nWe found something funny so we removed it.")
+    }
+    if (message.content == "WHO WAS IN PARIS") {
+        message.reply("HI-")
+        message.channel.send("Hello This is the Discord Team ヾ(＾ ∇ ＾) \nWe found something funny so we removed it.")
     }
 
 
     // Commands
     if (message.content === "/jaquote") {
         getQuote().then(quote => message.channel.send(quote))
-    }
-
-
-    if (message.content === "/jmsp"){
-        message.reply("https://www.youtube.com/playlist?list=PLjnsp86EUQgpV6rjy4sMlIPo-7LIbjZyX")
     }
 
     if (message.content === "/jrnum"){
@@ -111,7 +188,7 @@ function gotMessage(message){
 
     if (message.content === "/jhelp"){
         message.reply('I noticed you need help in operating with my functions (≧∇≦)/\n\
-Very well I shall aid you\n\nSo here is the thing\n slash "/" is for calling function \n \
+Very well I shall aid you\n\nSo here is the thing\n slash "/" is for calling function \n\
 Ik most bots use either $ or #\nBut my creator is built different\nAfter / the "j" stands for my name that is Jin\n\n\
 Real shit starts here\nAddition of m means meme\n\
    - Addition viol returns "That one there was a violation meme"\n\
