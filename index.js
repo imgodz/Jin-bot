@@ -33,107 +33,42 @@ function gotMessage(message){
     if (message.author.bot) return
 
     //Chats
-    if (message.content == "rick"){
+    if (message.content == "rick" || "Rick" || "RICK"){
         message.reply("roll")
     }
-    else if (message.content == "Rick"){
-        message.reply("Roll")
-    }
-    else if (message.content == "nice"){
+
+    else if (message.content == "nice" || "NICE" || "Nice") {
         message.reply("Ye")
     }
-    else if (message.content == "Nice"){
-        message.reply("Ye")
-    }
-    else if (message.content == "Sad"){
+        
+    else if (message.content == "Sad" || "SAD" || "sad"){
         message.reply("ikr lol")
     }
-    else if (message.content == "sad"){
-        message.reply("ikr lol")
-    }
-    if (message.content == "hi"){
-        message.reply("Hello There!!")
-    }
-    if (message.content == "HI"){
-        message.reply("Hello There!!")
-    }
-    if (message.content == "HI"){
-        message.reply("Hello There!!")
-    }
-    if (message.content == "hI"){
-        message.reply("Hello There!!")
-    }
-    if (message.content == "hlo"){
-        message.reply("Hello There!!")
-    }
-    if (message.content == "Hlo"){
-        message.reply("Hello There!!")
-    }
-    if (message.content == "HLO"){
-        message.reply("Hello There!!")
-    }
-    if (message.content == "Hello"){
-        message.reply("Hello There!!")
-    }
-    if (message.content == "hello"){
-        message.reply("Hello There!!")
-    }
-    if (message.content == "HELLO"){
-        message.reply("Hello There!!")
-    }
-    if (message.content == "Hey"){
-        message.reply("Hello There!!")
-    }
-    if (message.content == "hey"){
-        message.reply("Hello There!!")
-    }
-    if (message.content == "HEY"){
+
+    if (message.content == "hi" || "HI" || "Hi" || "hI"){
         message.reply("Hello There!!")
     }
 
-    if (message.content == "gg"){
+    if (message.content == "hlo" || "Hlo" || "HLO"){
+        message.reply("Hello There!!")
+    }
+
+    if (message.content == "Hello" || "HELLO" || "hello"){
+        message.reply("Hello There!!")
+    }
+    
+    if (message.content == "Hey" || "hey" || "HEY"){
+        message.reply("Hello There!!")
+    }
+
+    if (message.content == "gg" || "GG"){
         message.reply("GG")
     }
 
-    if (message.content.includes("what")){
+    if (message.content.includes("what" || "What" || "WHAT" || "Where" || "where" || "WHERE" || "Why" || "why" || "WHY" || "Whut" || "WHUT" || "whut" || "Wt" || "WT" ||  "wt")){
         message.reply("Sex")
     }
-    if (message.content.includes("What")){
-        message.reply("Sex")
-    }
-    if (message.content.includes("WHAT")){
-        message.reply("Sex")
-    }
-    if (message.content.includes("Where")){
-        message.reply("Sex")
-    }
-    if (message.content.includes("where")){
-        message.reply("Sex")
-    }
-    if (message.content.includes("WHERE")){
-        message.reply("Sex")
-    }
-    if (message.content.includes("Why")){
-        message.reply("Sex")
-    }
-    if (message.content.includes("why")){
-        message.reply("Sex")
-    }
-    if (message.content.includes("WHY")){
-        message.reply("Sex")
-    }
-    if (message.content.includes("Whut")){
-        message.reply("Sex")
-    }
-    if (message.content.includes("wt")){
-        message.reply("Sex")
-    }
-    if (message.content.includes("Whut")){
-        message.reply("Sex")
-    }
-    if (message.content.includes("Wt")){
-        message.reply("Sex")
-    }
+
 
     // Commands
     if (message.content === "/jaquote") {
@@ -174,16 +109,6 @@ function gotMessage(message){
     }*/
 
 
-
-    if (message.content === "/jmviol"){
-        message.reply('https://www.youtube.com/watch?v=s7gY2ewmPHo')
-    }
-    if (message.content === "/jmnindog"){
-        message.reply('https://www.youtube.com/watch?v=bldaBCv4BsY')
-    }
-    if (message.content === "/jmemodmg"){
-        message.reply('https://www.youtube.com/watch?v=Nid2HId9EVY')
-    }
     if (message.content === "/jhelp"){
         message.reply('I noticed you need help in operating with my functions (≧∇≦)/\n\
 Very well I shall aid you\n\nSo here is the thing\n slash "/" is for calling function \n \
