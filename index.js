@@ -151,6 +151,38 @@ function gotMessage(message){
         message.channel.send("Hello This is the Discord Team ヾ(＾ ∇ ＾) \nWe found something funny so we removed it.")
     }
 
+    // Calls
+
+    if (message.content.includes("Charan")) {
+        message.channel.send("<@663753057682587679> You've been Summoned")
+    }
+    if (message.content.includes("charan")) {
+        message.channel.send("<@663753057682587679> You've been Summoned")
+    }
+    if (message.content.includes("CHARAN")) {
+        message.channel.send("<@663753057682587679> You've been Summoned")
+    }
+
+    if (message.content.includes("prashasth")) {
+        message.channel.send("<@754326560898547772> You've been Summoned")
+    }
+    if (message.content.includes("Prashasth")) {
+        message.channel.send("<@754326560898547772> You've been Summoned")
+    }
+    if (message.content.includes("PRASHASTH")) {
+        message.channel.send("<@754326560898547772> You've been Summoned")
+    }
+    if (message.content.includes("Akhil")) {
+        message.channel.send("<@516440044190433300> You've been Summoned")
+    }
+    if (message.content.includes("AKHIL")) {
+        message.channel.send("<@516440044190433300> You've been Summoned")
+    }
+    if (message.content.includes("akhil")) {
+        message.channel.send("<@516440044190433300> You've been Summoned")
+    }
+
+
 
     // Commands
     if (message.content === "/jaquote") {
